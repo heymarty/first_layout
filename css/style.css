@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Socialico';
+  src: url('../fonts/Socialico.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Socialico.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Socialico.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Socialico.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Socialico.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Socialico.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
 .container {
 	width: 1280px;
 	margin: 0 auto;
@@ -156,17 +166,343 @@ ul {
 
 .screenshots_figure {
 	margin: 0;
+	width: 590px;
 }
 
-.figure_img {
+.left {
 	float: left;
 }
 
+.right {
+	float: right;
+}
+
+.figure_img {
+    float: left;
+    margin: 0 15px 30px 0;
+}
+
 .screenshots_figcaption {
-	clear: left;
+	margin: 0 15px 0 0;
 }
 
 .figure_title {
-  font-size: 24px;
-  color: #445161;
+	font-size: 24px;
+  	color: #445161;
+}
+
+.figure_text {
+	color: #333;
+	margin: 10px 0;
+}
+
+figure:nth-child(3) > figcaption {
+	margin: 0;
+}
+
+figure:nth-child(5) > figcaption {
+	margin: 0;
+}
+
+
+/*Пятая секция*/
+
+.reviews {
+	clear: both;
+    padding: 50px;
+    background: #f5f5f5;
+}
+
+.reviews_title {
+	color: #445161;
+    font-size: 30px;
+    text-align: center;
+    padding: 0 0 30px 0;
+}
+
+.reviews_list {
+    column-count: 2;
+}
+
+.reviews_list_item {
+	clear: both;
+}
+
+.reviews_list_img {
+	float: left;
+	margin: 0 28px 0 0;
+}
+
+.reviews_comment {
+	float: left;
+	width: 440px;
+	background: #ebebeb;
+	padding: 15px;
+    border-radius: 6px;
+    position: relative;
+
+}
+
+.reviews_comment:after {
+    content: '';
+    position: absolute;
+    left: -24px;
+    bottom: 72px;
+    border: 12px solid transparent;
+    border-right: 12px solid #ebebeb;
+   }
+
+.reviews_text {
+	color: #333;
+	font-style: italic;
+	font-size: 14px;
+	margin: 0 0 12px 0;
+}
+
+li:nth-child(1) > div,
+li:nth-child(3) > div {
+	margin-bottom: 24px;
+}
+
+.reviews_signature {
+	color: #989898;
+	font-size: 14px;
+}
+
+
+/*Шестая секция*/
+
+.offer {
+	padding: 50px 95px;
+}
+
+.offer_title {
+	font-size: 30px;
+	color: #445161;
+	text-align: center;
+	padding: 0 0 30px 0;
+}
+
+.offer_rate {
+	background: #445162;
+	color: #fff;
+	width: 300px;
+	border-radius: 6px;
+    padding-bottom: 20px;
+    float: left;
+    margin-bottom: 50px;
+}
+
+.offer > div:nth-child(2) {
+	margin-top: 192px;
+}
+
+.offer > div:nth-child(3) {
+	margin: 96px 45px 0 45px;
+}
+
+.span_title,
+.span_price {
+    display: block;
+    text-align: center;
+}
+
+.span_title {
+	font-size: 24px;
+	padding: 15px 0;
+}
+
+.span_price {
+	font-size: 40px;
+	color: #445162;
+	background: #fff;
+    margin: 0 2px;
+    padding: 12px 0;
+}
+
+.offer_list {
+	margin: 16px 0 0 0;
+}
+
+.offer_list_item {
+	padding-bottom: 8px;
+    font-size: 14px;
+
+}
+
+.offer_button {
+	display: block;
+	width: 260px;
+    border: none;
+    background: #fff;
+    color: #445162;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 0;
+    border-radius: 6px;
+    margin: 0 auto;
+    margin-top: 15px;
+    outline: none;
+}
+
+.offer_button:active {
+	background: #ccc;
+}
+
+.offer_button:hover {
+	cursor: pointer;
+}
+
+/* Footer */
+
+.footer {
+	clear: both;
+	background: #445162;
+}
+
+.footer_title {
+	font-size: 30px;
+	color: #fff;
+	text-align: center;
+	margin: 0 0 28px 0;
+    padding: 50px 0 0 0;
+}
+
+.footer_form {
+	width: 480px;
+	margin: 0 50px 50px 250px;
+	float: left;
+}
+
+fieldset {
+	margin: 0;
+    padding: 0;
+    border: none;
+}
+
+input,
+textarea {
+	display: block;
+	width: 100%;
+	border: none;
+    padding: 12px 10px;
+    margin: 0 0 21px 0;
+	border-radius: 6px;
+	color: #445162;
+	font-size: 16px;
+}
+
+textarea {
+	resize: none;
+	height: 146px;
+}
+
+.form_button {
+	width: 140px;
+	margin: 0 auto;
+	background: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	outline: none;
+}
+
+.form_button:active {
+	background: #ccc;
+}
+
+.form_button:hover {
+	cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+	color: #445162;
+}
+:-moz-placeholder {
+    color: #445162;
+}
+::-moz-placeholder {
+    color: #445162;
+}
+:-ms-input-placeholder {
+    color: #445162;
+}
+
+.footer_contacts {
+    float: left;
+    margin: 0 0 0 95px;
+}
+
+.contacts_list {
+	color: #fff;
+}
+
+.contacts_list_item {
+	margin: 0 0 27px 0;
+	position: relative;
+}
+
+.contacts_list_item:nth-child(1):before {
+    content: "";
+    background-image: url(../img/skype.png);
+    position: absolute;
+    width: 24px;
+    height: 26px;
+    top: -5px;
+    left: -28px;
+}
+
+.contacts_list_item:nth-child(2):before {
+    content: "";
+    background-image: url(../img/icq.png);
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: -5px;
+    left: -30px;
+}
+
+.contacts_list_item:nth-child(3):before {
+    content: "";
+    background-image: url(../img/email.png);
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: -1px;
+    left: -27px;
+}
+
+.contacts_list_item:nth-child(4):before {
+    content: "";
+    background-image: url(../img/phone.png);
+    position: absolute;
+    width: 24px;
+    height: 23px;
+    top: -5px;
+    left: -28px;
+}
+
+.social {
+	font-family: Socialico;
+	color: #fff;
+	text-decoration: none;
+	font-size: 60px;
+}
+
+.social:hover {
+	cursor: pointer;
+	color: #ccc;
+}
+
+.social:nth-child(2) {
+	margin: 0 0 0 -28px;
+}
+
+.footer_copyright {
+	clear: both;
+	background: #f5f5f5;
+	text-align: center;
+	font-size: 12px;
+	color: #445162;
+	padding: 6px;
 }
