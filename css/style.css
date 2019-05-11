@@ -346,13 +346,15 @@ li:nth-child(3) > div {
     outline: none;
 }
 
-.offer_button:active {
-	background: #ccc;
-}
-
 .offer_button:hover {
 	cursor: pointer;
+	background: #ebebeb;
 }
+
+.offer_button:active {
+	background: #fff;
+}
+
 
 /* Footer */
 
@@ -391,6 +393,7 @@ textarea {
 	border-radius: 6px;
 	color: #445162;
 	font-size: 16px;
+	outline: none;
 }
 
 textarea {
@@ -407,12 +410,13 @@ textarea {
 	outline: none;
 }
 
-.form_button:active {
-	background: #ccc;
+.form_button:hover {
+	background: #ebebeb;
+	cursor: pointer;
 }
 
-.form_button:hover {
-	cursor: pointer;
+.form_button:active {
+	background: #fff;
 }
 
 ::-webkit-input-placeholder {
@@ -491,7 +495,7 @@ textarea {
 
 .social:hover {
 	cursor: pointer;
-	color: #ccc;
+	color: #ebebeb;
 }
 
 .social:nth-child(2) {
